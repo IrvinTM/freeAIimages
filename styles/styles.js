@@ -23,19 +23,35 @@ export const styles = StyleSheet.create({
       alignItems: "center",
       borderRadius: 5,
       marginBottom:10,
+      marginTop: 50,
     },
     label: {
         height: 25,
         width: '80%',
     },
     image:{
-        paddingTop: 10,
-        width: 300,
-        height:400,
         resizeMode: 'contain',
     },
     picker:{
-        marginTop: 20,
-        marginBottom: 20,
+        width: '80%',
+        height: '10%'
+    },
+
+    loadingContainer:{
+      position: 'relative',
+    left: 0,
+    right: 0,
+    top: 200,
+    bottom: 0,
+    alignItems: 'center',
+    justifyContent: 'center'
+      
+    },
+    loadingText:{
+      textAlign: "center",
+      fontSize: 20,
+      fontWeight: "bold",
+      color: "black",
+
     }
   });

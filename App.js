@@ -5,8 +5,8 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 export default function App() {
   return (
-    <SafeAreaProvider style={styles.container}>
-      <SafeAreaView style={styles.container}>
+    <SafeAreaProvider>
+      <SafeAreaView>
         <StatusBar style="auto" />
         <Main />
       </SafeAreaView>

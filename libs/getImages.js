@@ -12,7 +12,6 @@ export async function getImages(prompt, negative, model, setTarget) {
     },
   };
   try {
-    console.log("el modelo a usar es"+ model)
     const image = await fetch(url, {
       method: "POST",
       headers: {

@@ -55,7 +55,6 @@ export function Main() {
   };
   const handleChange = (item) => {
     setModel(item)
-    console.log("el value es ", item)
   };
   async function handlePress() {
     if(!model){
@@ -66,7 +65,7 @@ export function Main() {
     }
     else{
       setIgenerating(true)
-      Keyboard.dismiss
+      Keyboard.dismiss()
       getImages(text, negativePrompt, model, setImgUrl)
       .then(()=> {setIgenerating(false)
       })
